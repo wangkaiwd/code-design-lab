@@ -1,0 +1,26 @@
+{
+  "name": "library-core-demos",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "01": "node demos/01-facade/main.ts",
+    "02": "node demos/02-plugin/main.ts",
+    "02:agent": "node demos/02-plugin/agent-harness/main.ts",
+    "03": "node demos/03-functional/main.ts",
+    "04": "node demos/04-mixin/main.ts",
+    "05:renderer": "node demos/05-adapter/renderer/main.ts",
+    "05:llm": "node demos/05-adapter/llm/main.ts",
+    "06:koa": "node demos/06-middleware/koa/main.ts",
+    "06:llm": "node demos/06-middleware/llm/main.ts",
+    "06:agent": "node demos/06-middleware/agent/main.ts",
+    "07": "node demos/07-capstone/main.ts",
+    "08": "node demos/08-cline/main.ts",
+    "test": "node --test demos/tests/*.test.ts",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
+  }
+}
